@@ -11,9 +11,8 @@ interface Props {
 const props = defineProps<Props>()
 </script>
 <template lang='html'>
-  
   <yandex-map-marker :settings="{ coordinates: props.coords }">
-    <div class="rounded-full w-9 h-9 bg-white border-4 border-[#ff4f4f]">
+    <div class="rounded-full w-12 h-12 bg-white border-4 border-[#ff4f4f]">
       <img :src="springIcon" />
     </div>
   </yandex-map-marker>

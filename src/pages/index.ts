@@ -11,6 +11,11 @@ export const routes = [
     component: () => import("./MapPage"),
     name: "Map",
   },
+  {
+    path: "/springs",
+    component: () => import("./SpringsPage"),
+    name: "Springs",
+  },
 ];
 
 export { Routing };

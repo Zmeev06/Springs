@@ -1,3 +1,3 @@
 import Marker from './Marker.vue'
 
-export { Marker };
+export { Marker }
