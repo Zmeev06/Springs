@@ -6,6 +6,11 @@ export const routes = [
     component: () => import("./LoginPage"),
     name: "Login",
   },
+  {
+    path: "/map",
+    component: () => import("./MapPage"),
+    name: "Map",
+  },
 ];
 
 export { Routing };

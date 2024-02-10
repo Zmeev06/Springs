@@ -3,6 +3,7 @@ import FadeLoader from "vue-spinner/src/FadeLoader.vue";
 import { RouteMeta, RouterView, useRouter } from "vue-router";
 import { Loader } from "@shared/ui/Loader";
 import { ref } from "vue";
+import { BottomBlock } from '@entities/BottomBlock'
 
 const router = useRouter();
 const isShowLoader = ref(false);
