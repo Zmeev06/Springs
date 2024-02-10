@@ -3,7 +3,7 @@
 </script>
 <template lang='html'>
   <Teleport to="body">
-  <div class=" fixed bottom-0 left-0 w-full h-16 rounded-t-xl bg-cyan flex items-center justify-center">
+  <div class=" fixed bottom-0 left-0 w-full h-16 rounded-t-xl bg-white flex items-center justify-center">
     
     <div class="flex w-4/5 justify-between items-center">
       <slot name="map" />
