@@ -54,7 +54,7 @@ onMounted(() => {
   </div>
   <a-button style="width: 100%" class="mt-2" type="primary" @click="router.push(`/spring/${item.id}`)">Подробнее</a-button>
   </div>
-<div class="rounded-full w-10 h-10 flex items-center justify-center bg-white border-4 border-[#ff4f4f]">
+<div class="rounded-full w-10 h-10 flex items-center justify-center bg-white border-4 border-[#ff4f4f] cursor-pointer">
   <i class="pi pi-slack text-cyan" />
 </div>
 </yandex-map-marker>
