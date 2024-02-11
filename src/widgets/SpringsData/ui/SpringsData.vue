@@ -1,12 +1,10 @@
 <script setup lang='ts'>
-import { Search } from '@features/Search';
+import { SpringsList } from '@entities/SpringsList';
 
   
 </script>
 <template lang='html'>
-  <div>
-    <Search />
-  </div>
+    <SpringsList />
 </template>
 <style lang='scss'>
     

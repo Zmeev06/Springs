@@ -1,11 +1,18 @@
 <script setup lang='ts'>
-import { ref } from 'vue';
+interface Props {
+  searchValue: string
+}
 
-const searchValue = ref('')
+interface Emit {
+  (emit: 'update:searchValue', value: string): void
+}
+
+const props = defineProps<Props>()
+const emit = defineEmits<Emit>()
 </script>
 <template lang='html'>
   <div class="relative w-4/5 mx-auto">
-    <a-input v-model:value="searchValue" placeholder="Поиск" />
+    <a-input :value="props.searchValue" @input="(e:any) => emit('update:searchValue', e.target.value)" placeholder="Поиск" />
     <i class="pi pi-search text-gray absolute duration-300 top-1/4 right-2" />
   </div>
 </template>

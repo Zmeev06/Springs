@@ -5,10 +5,12 @@ import {
 } from 'vue-yandex-maps';
 interface Props {
   coords: any,
-  handleClick?: () => void
+  openMarker: number
+  id: number
 }
 
 const props = defineProps<Props>()
+
 </script>
 <template lang='html'>
   <yandex-map-marker :settings="{ coordinates: props.coords }">

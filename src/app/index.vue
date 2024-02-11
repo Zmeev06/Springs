@@ -28,4 +28,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.ant-btn-primary {
+  background-color: #4096ff !important; 
+}
 </style>

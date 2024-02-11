@@ -7,8 +7,9 @@ const route = useRoute()
 const path = route.path
 </script>
 <template lang='html'>
-  <div class="rounded-full w-8 h-8 hover:bg-gray-light duration-300 flex items-center justify-center" :class="path === '/springs' ? 'bg-gray-light' : ''" @click="router.push('/springs')">
-    <i class="pi pi-home text-lg" />
+
+  <div class="w-20 h-20 bg-cyan rounded-full flex items-center justify-center hover:bg-cyan-light shadow-lg shadow-cyan" :class="path === '/springs' ? 'bg-cyan-light' : ''" @click="router.push('/springs')">
+    <i class="pi pi-home text-lg text-white" />
   </div>
 </template>
 <style lang='scss'>

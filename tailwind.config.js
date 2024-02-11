@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'cyan': '#7BC6CF',
+      'cyan-light': '#9be2eb',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
@@ -17,6 +18,9 @@ export default {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
       'white': '#FFF'
+    },
+    screens: {
+      'tablet': '700px',
     },
   },
   plugins: [],
