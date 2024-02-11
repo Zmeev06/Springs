@@ -36,16 +36,16 @@ onMounted(() => {
 </script>
 <template lang='html'>
   <div class="w-[95%] mx-auto mt-3 h-12 flex justify-between px-5 py-2 shadow-md items-center bg-gray-light/40 rounded-md cursor-pointer">
-    <div class="flex gap-5 items-center">
+    <div class="flex gap-5 items-center w-[60%]">
       <a-image
       :width="40"
       :height="40"
       class="object-cover"
       src="https://www.zhukgsn.ru/wp-content/uploads/2023/02/rodnik.jpg"
     />
-    <p>{{props.name}}</p>
+    <p class="truncate">{{props.name}}</p>
     </div>
-  <div class="flex gap-1 items-center">
+  <div class="flex gap-1 items-center min-w-[200px]">
     <img :src="man" alt="" />
     <span class=" text-xs text-gray">{{`${time ? time.durationValue : '0'}`}}</span>
     <span class=" text-gray">·</span>

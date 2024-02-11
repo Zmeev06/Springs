@@ -12,7 +12,8 @@ interface ISpring {
   coords: any
   id: number
 name: string
-photo: string
+  photo: string
+  general_status: 'Very bad' | 'Bad' | 'Medium' | 'Good' | 'Very Good'
 }
 
 const map = shallowRef<null | YMap>(null);
@@ -54,7 +55,7 @@ onMounted(() => {
   </div>
   <a-button style="width: 100%" class="mt-2" type="primary" @click="router.push(`/spring/${item.id}`)">Подробнее</a-button>
   </div>
-<div class="rounded-full w-10 h-10 flex items-center justify-center bg-white border-4 border-[#ff4f4f] cursor-pointer">
+<div class="rounded-full w-10 h-10 flex items-center justify-center bg-white border-4 cursor-pointer" :class="item.general_status === 'Very bad' ? 'border-[#ff4f4f]' : item.general_status === 'Bad' ? 'border-[#e37878]' : item.general_status === 'Medium' ? 'border-[#564dd2]' : item.general_status === 'Good' ? 'border-[#3d9135]' : 'border-[#71f557]'">
   <i class="pi pi-slack text-cyan" />
 </div>
 </yandex-map-marker>

@@ -5,9 +5,9 @@ import { YandexMap, YandexMapDefaultSchemeLayer, YandexMapDefaultFeaturesLayer }
 import { Marker } from '@shared/ui/Marker';
 
 interface Props {
-  coords: string
-  addres: string
-  mapCoords: any
+  coords?: string
+  addres?: string
+  mapCoords?: any
 }
 
 const props = defineProps<Props>()
@@ -15,20 +15,16 @@ const props = defineProps<Props>()
 const map = shallowRef<null | YMap>(null);
 </script>
 <template lang='html'>
-  <div>
-
- 
+  <div v-if="props.coords && props.addres && props.mapCoords">
     <a-descriptions title="" :column="1" class="flex flex-col justify-between">
       <a-descriptions-item label="Координаты">
-        <p>{{props.coords}}</p>
+        <p>{{props.coords ? props.coords : 'Нет данных'}}</p>
       </a-descriptions-item>
       <a-descriptions-item label="Адрес">
-        <p>{{props.addres}}</p>
+        <p>{{props.addres ? props.addres : 'Нет данных'}}</p>
       </a-descriptions-item>
-
-        
       </a-descriptions>
-      <div class="w-[95%] h-52 mx-auto"><yandex-map
+      <div class="w-[95%] h-52 tablet:h-80 mx-auto"><yandex-map
         v-model="map"
         :settings="{
           location: {
@@ -50,4 +46,4 @@ const map = shallowRef<null | YMap>(null);
 </template>
 <style lang='scss'>
     
-</style>@//shared/Marker
+</style>

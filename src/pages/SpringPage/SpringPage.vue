@@ -2,7 +2,7 @@
 import { SpringData } from '@widgets/SpringData'
 </script>
 <template lang='html'>
-  <div class="pt-3 bg-gray-light h-screen">
+  <div class="pt-3 bg-gray-light min-h-screen">
     <SpringData />
   </div>
 </template>

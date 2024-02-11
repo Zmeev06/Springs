@@ -5,8 +5,6 @@ import {
 } from 'vue-yandex-maps';
 interface Props {
   coords: any,
-  openMarker: number
-  id: number
 }
 
 const props = defineProps<Props>()
